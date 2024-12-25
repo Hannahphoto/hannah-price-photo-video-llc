@@ -1,14 +1,21 @@
-* {
-  
+
+
+
+/* fonts */
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-
-h1{
-  Hannah Price
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .poppins-light {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -37,4 +44,14 @@ h1{
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
