@@ -7,7 +7,46 @@ import { Grid, Cell,Menu,MenuItem } from "react-foundation";
 import App from './App.jsx'
 
 //bring in the pages so the router will show appropriate view/page
+import ErrorPage from './pages/ErrorPage.jsx';
+import HomePage from './pages/HomePage.jsx';
+import PhotoPage from './pages/PhotoPage.jsx';
+import VideoPage from './pages/Videopage.jsx';
+import CommissionPage from './pages/CommissionPage.jsx';
+import ResumePage from './pages/ResumePage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 
+
+const router createRoot([
+    {
+      path: '/',
+      element:<HomePage/>,
+      errorElement: <ErrorPage/>,
+    },
+    {
+      path: '/',
+      element:<PhotoPage/>,
+      errorElement: <ErrorPage/>,
+    },
+    {
+      path: '/',
+      element:<VideoPage/>,
+      errorElement: <ErrorPage/>,
+    },
+    {
+      path: '/',
+      element:<CommissionPage/>,
+      errorElement: <ErrorPage/>,
+    },
+    {
+      path: '/',
+      element:<ResumePage/>,
+      errorElement: <ErrorPage/>,
+    },  {
+      path: '/',
+      element:<ContactPage/>,
+      errorElement: <ErrorPage/>,
+    },
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
