@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+import ReactDOM from 'react-dom/client';
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import '@fontsource/red-hat-mono'; // Defaults to 400 weight
@@ -48,7 +49,7 @@ const router createRoot([
     },
 ]);
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>,
