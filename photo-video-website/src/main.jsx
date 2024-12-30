@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client';
-import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-dom/client'
 import './index.css'
 import '@fontsource/red-hat-mono'; // Defaults to 400 weight
 import 'foundation-sites/dist/css/foundation.min.css'; //foundation framework
@@ -17,10 +17,10 @@ import ResumePage from './pages/ResumePage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 
 
-const router createRoot([
+const router = createBrowserRouter([
     {
       path: '/',
-      element:<HomePage/>,
+      element: <HomePage/>,
       errorElement: <ErrorPage/>,
     },
     {
@@ -51,6 +51,6 @@ const router createRoot([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <RouterProvider router = {router}/>
+  </StrictMode>
+);

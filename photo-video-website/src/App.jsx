@@ -7,7 +7,7 @@ import CommissionPortfolio from './components/CommissionPortfolio';
 import ResumeCard from './components/ResumeCard';
 import ContactCard from './components/ContactCard';
 import Footer from './components/Footer';
-import './App.css'
+import '.App.css'
 
 function App() {
   const [count, setCount] = useState(0)
