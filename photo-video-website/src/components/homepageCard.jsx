@@ -3,7 +3,7 @@
 
 export default function HomepageCard(){
     return(
-        <div style={{ fontFamily: 'Poppins, sans-serif' }}>
+        <div className="poppins-medium">
       Hannah Price
     </div>
   );

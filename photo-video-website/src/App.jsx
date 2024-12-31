@@ -8,7 +8,7 @@ import ResumeCard from './components/ResumeCard';
 import ContactCard from './components/ContactCard';
 import Footer from './components/Footer';
 
-import './styles/nav.css'
+import './App.css';
 
 import '@fontsource/poppins/400.css'; // Regular
 import '@fontsource/poppins/500.css'; // Medium
