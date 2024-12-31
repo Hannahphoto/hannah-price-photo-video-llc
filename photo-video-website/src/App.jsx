@@ -8,8 +8,12 @@ import ResumeCard from './components/ResumeCard';
 import ContactCard from './components/ContactCard';
 import Footer from './components/Footer';
 
-import './App.css'
+import './styles/nav.css'
 
+import '@fontsource/poppins/400.css'; // Regular
+import '@fontsource/poppins/500.css'; // Medium
+import '@fontsource/poppins/600.css'; // Semi-bold
+import '@fontsource/poppins/700.css'; // Bold
 
 
 

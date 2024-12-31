@@ -1,12 +1,10 @@
 // Import react-foundation components
-import { Menu,MenuItem } from "react-foundation";
+// import { Menu,MenuItem } from "react-foundation";
 
 export default function HomepageCard(){
     return(
-        <>
-            <h1 className="poppins-medium">
+        <div style={{ fontFamily: 'Poppins, sans-serif' }}>
       Hannah Price
-    </h1>
-        </>
-    )
+    </div>
+  );
 }
