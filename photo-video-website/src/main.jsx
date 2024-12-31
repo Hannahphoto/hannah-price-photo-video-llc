@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, RouterProvider  } from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 import './index.css'
 import '@fontsource/red-hat-mono'; // Defaults to 400 weight
 import 'foundation-sites/dist/css/foundation.min.css'; //foundation framework
-import { Grid, Cell,Menu,MenuItem } from "react-foundation";
+// import { Grid, Cell,Menu,MenuItem } from "react-foundation";
 import App from './App.jsx'
 
 //bring in the pages so the router will show appropriate view/page
@@ -16,7 +17,7 @@ import ResumePage from './pages/ResumePage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 
 
-const router createRoot([
+const router = createBrowserRouter([
     {
       path: '/',
       element:<HomePage/>,
@@ -48,8 +49,8 @@ const router createRoot([
     },
 ]);
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router = {router} />
   </StrictMode>,
 )
